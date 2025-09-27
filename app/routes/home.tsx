@@ -38,8 +38,8 @@ export default function Home() {
       setResumes(parsedResumes || []);
       setLoadingResumes(false);
       }
-    loadResume();
-}, []);
+    loadResumes();
+}, [kv]);
 
 
 
@@ -70,7 +70,7 @@ export default function Home() {
         </div> 
       )}
 
-      {!loadingResumes && resumes ?.length === 0 && (
+      {!loadingResumes && resumes?.length === 0 && (
         <div className="flex flex-col items-center justify-center mt-10 gap-4">
           <Link to="./upload.tsx" className="primary-button w-fit text-xl font-semibold">
           Upload Resume
