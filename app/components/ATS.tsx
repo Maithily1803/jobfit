@@ -1,63 +1,40 @@
-import { cn } from "~/lib/utils";
-
-const ATS = ({
-  score,
-  suggestions,
-}: {
-  score: number;
-  suggestions: { type: "good" | "improve"; tip: string }[];
-}) => {
+const ATS = ({ score, suggestions }: { score: number; suggestions: any[] }) => {
   return (
     <div
-      className={cn(
-        "rounded-2xl shadow-md w-full bg-gradient-to-b to-light-white p-8 flex flex-col gap-4",
-        score > 69
-          ? "from-green-100"
-          : score > 49
-          ? "from-yellow-100"
-          : "from-red-100"
-      )}
+      className={`rounded-2xl shadow-md w-full p-6 flex flex-col gap-4 
+        ${score > 69 ? 'bg-green-50' : score > 49 ? 'bg-yellow-50' : 'bg-red-50'}`}
     >
-      <div className="flex flex-row gap-4 items-center">
+      <div className="flex items-center gap-4">
         <img
           src={
             score > 69
-              ? "/icons/ats-good.svg"
+              ? '/icons/ats-good.svg'
               : score > 49
-              ? "/icons/ats-warning.svg"
-              : "/icons/ats-bad.svg"
+              ? '/icons/ats-warning.svg'
+              : '/icons/ats-bad.svg'
           }
           alt="ATS"
           className="w-10 h-10"
         />
-        <p className="text-2xl font-semibold">ATS Score - {score}/100</p>
+        <p className="text-2xl font-semibold text-gray-800">
+          ATS Score - <span className="font-bold">{score}/100</span>
+        </p>
       </div>
-      <div className="flex flex-col gap-2">
-        <p className="font-medium text-xl">
+
+      <div className="text-gray-600 text-base space-y-2">
+        <p className="font-medium text-lg">
           How well does your resume pass through Applicant Tracking Systems?
         </p>
-        <p className="text-lg text-gray-500">
-          Your resume was scanned like an employer would. Here's how it
-          performed:
-        </p>
-        {suggestions.map((suggestion, index) => (
-          <div className="flex flex-row gap-2 items-center" key={index}>
+        {suggestions.map((s, i) => (
+          <div key={i} className="flex items-center gap-2">
             <img
-              src={
-                suggestion.type === "good"
-                  ? "/icons/check.svg"
-                  : "/icons/warning.svg"
-              }
-              alt="ATS"
+              src={s.type === 'good' ? '/icons/check.svg' : '/icons/warning.svg'}
+              alt="tip"
               className="w-4 h-4"
             />
-            <p className="text-lg text-gray-500">{suggestion.tip}</p>
+            <p>{s.tip}</p>
           </div>
         ))}
-        <p className="text-lg text-gray-500">
-          Want a better score? Improve your resume by applying the suggestions
-          listed below.
-        </p>
       </div>
     </div>
   );
