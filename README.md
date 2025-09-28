@@ -5,7 +5,6 @@ A modern, production-ready web application to analyze resumes, provide detailed 
 Live Demo: https://jobfit-gray.vercel.app/
 
 ## Features
-
 📄 Resume Scoring: AI-powered overall resume score with detailed category breakdown (Tone & Style, Content, Structure, Skills).
 🟢 ATS Compatibility Check: Evaluates how well your resume passes Applicant Tracking Systems.
 📊 Interactive Visualizations: Circular progress bars, badges, and color-coded scores for clear feedback.
