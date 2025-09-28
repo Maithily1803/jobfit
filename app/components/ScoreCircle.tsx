@@ -3,8 +3,12 @@ const ScoreCircle = ({ score = 75 }: { score: number }) => {
   const stroke = 8;
   const normalizedRadius = radius - stroke / 2;
   const circumference = 2 * Math.PI * normalizedRadius;
-  const progress = score / 100;
+
+  const clampedScore = Math.max(0, Math.min(100, score));
+  const progress = clampedScore / 100;
   const strokeDashoffset = circumference * (1 - progress);
+
+  const gradientId = `grad-${score}`;
 
   return (
     <div className="relative w-[100px] h-[100px]">
@@ -23,32 +27,34 @@ const ScoreCircle = ({ score = 75 }: { score: number }) => {
           strokeWidth={stroke}
           fill="transparent"
         />
-        {/* Partial circle with gradient */}
+        {/* Gradient */}
         <defs>
-          <linearGradient id="grad" x1="1" y1="0" x2="0" y2="1">
+          <linearGradient id={gradientId} x1="1" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor="#FF97AD" />
             <stop offset="100%" stopColor="#5171FF" />
           </linearGradient>
         </defs>
+        {/* Progress */}
         <circle
           cx="50"
           cy="50"
           r={normalizedRadius}
-          stroke="url(#grad)"
+          stroke={`url(#${gradientId})`}
           strokeWidth={stroke}
           fill="transparent"
           strokeDasharray={circumference}
           strokeDashoffset={strokeDashoffset}
-          strokeLinecap="round"
+          strokeLinecap="butt"   // ✅ no gap
         />
       </svg>
 
-      {/* Score and issues */}
+      {/* Score */}
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className="font-semibold text-sm">{`${score}/100`}</span>
+        <span className="font-semibold text-sm">{`${clampedScore}/100`}</span>
       </div>
     </div>
   );
 };
 
 export default ScoreCircle;
+
