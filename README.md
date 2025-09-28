@@ -1,18 +1,18 @@
-# Welcome to React Router!
+JOBFIT – AI-powered resume review platform with ATS scoring.
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A modern, production-ready web application to analyze resumes, provide detailed category scores, and check ATS compatibility.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Live Demo: https://jobfit-gray.vercel.app/
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+📄 Resume Scoring: AI-powered overall resume score with detailed category breakdown (Tone & Style, Content, Structure, Skills).
+🟢 ATS Compatibility Check: Evaluates how well your resume passes Applicant Tracking Systems.
+📊 Interactive Visualizations: Circular progress bars, badges, and color-coded scores for clear feedback.
+💡 Actionable Suggestions: Provides tips to improve your resume quality and ATS score.
+🎨 Modern UI: Clean, responsive design using TailwindCSS with hover effects and gradients.
+⚡ Fast & Responsive: Optimized for quick loading and smooth interactions.
+🔒 TypeScript by Default: Ensures type safety across the codebase.
 
 ## Getting Started
 
@@ -55,18 +55,7 @@ docker build -t my-app .
 docker run -p 3000:3000 my-app
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
 
 Make sure to deploy the output of `npm run build`
 
