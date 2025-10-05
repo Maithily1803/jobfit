@@ -1,6 +1,9 @@
 #JOBFIT – AI Resume Review Platform with ATS scoring.
+
 A modern, production-ready web application to analyze resumes, provide detailed category scores, and check ATS compatibility.
+
 Live Demo: https://jobfit-gray.vercel.app/
+
 <img width="1440" height="819" alt="Screenshot 2025-10-06 at 12 13 55 AM" src="https://github.com/user-attachments/assets/38a61887-9e93-4661-be1f-9d7bcad8454f" />
 
 
