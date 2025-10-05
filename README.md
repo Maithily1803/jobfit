@@ -1,8 +1,9 @@
-JOBFIT – AI-powered resume review platform with ATS scoring.
-
+#JOBFIT – AI Resume Review Platform with ATS scoring.
 A modern, production-ready web application to analyze resumes, provide detailed category scores, and check ATS compatibility.
-
 Live Demo: https://jobfit-gray.vercel.app/
+<img width="1440" height="819" alt="Screenshot 2025-10-06 at 12 13 55 AM" src="https://github.com/user-attachments/assets/38a61887-9e93-4661-be1f-9d7bcad8454f" />
+
+
 
 ## Features
 📄 Resume Scoring: AI-powered overall resume score with detailed category breakdown (Tone & Style, Content, Structure, Skills).
@@ -40,20 +41,6 @@ Create a production build:
 ```bash
 npm run build
 ```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
 
 
 Make sure to deploy the output of `npm run build`
