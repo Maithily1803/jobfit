@@ -1,4 +1,4 @@
-#JOBFIT – AI Resume Review Platform with ATS scoring.
+# JOBFIT – AI Resume Review Platform with ATS scoring.
 
 A modern, production-ready web application to analyze resumes, provide detailed category scores, and check ATS compatibility.
 
