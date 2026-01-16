@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Shadows+Into+Light+Two&size=50&duration=3000&pause=1000&color=A18FF7&width=1000&height=100&lines=JobFit+-+AI+Resume+Checker)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Shadows+Into+Light+Two&size=50&duration=5000&pause=3000&color=A18FF7&width=1000&height=100&lines=JobFit+-+AI+Resume+Checker)](https://git.io/typing-svg)
 
 ---
  
