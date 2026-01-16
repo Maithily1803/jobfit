@@ -1,7 +1,5 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Shadows+Into+Light+Two&size=50&duration=5000&pause=3000&color=A18FF7&width=1000&height=100&lines=JobFit+-+AI+Resume+Checker)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Shadows+Into+Light+Two&size=50&duration=5000&pause=3000&color=A18FF7&width=1000&height=100&lines=JobFit+-+AI+Resume+Checker)](https://git.io/typing-svg)
 
----
- 
 ### **`Smart feedback for your dream job.`**
 
 ---
@@ -18,13 +16,13 @@
 ---
 ## ✨ Features
 
-**`AI Resume Analysis`**  
+- **`AI Resume Analysis`**  
 Evaluates resumes across Tone & Style, Content, Structure, Skills and ATS compatibility with clear score breakdowns and actionable insights.
 
-**`ATS Optimization Score`**  
+- **`ATS Optimization Score`**  
 Generates a dedicated ATS score, identifies missing keywords and formatting issues and provides color-coded feedback for quick assessment.
 
-**`Multi-Resume Tracking Dashboard`**  
+- **`Multi-Resume Tracking Dashboard`**  
 Track and compare multiple resume submissions with visual cards, previews, overall scores and persistent storage.
 
 ___
